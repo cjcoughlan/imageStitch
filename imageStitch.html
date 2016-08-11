@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a {
+		    color: #23b7fb;
+		    font-weight: 600;
+		    text-decoration: none;
+		    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		}
+		.images-container{
+			position: relative;
+			display: block;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.image-list{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			list-style: none;
+		}
+		.big{
+			clear: none;
+			width: 50%;
+			float: left;
+		}
+		.small{
+			width: 25%;
+			float: left;
+		}
+		.tile{
+			height: 0;
+		    padding-bottom: 100%;
+		    position: relative;
+		    display: block;
+		}
+		.tile>.wrapper, .tile>.wrapper:before {
+		    display: block;
+		    height: 100%;
+		    position: absolute;
+		    width: 100%;
+		}
+		.tile>.wrapper {
+		    overflow: hidden;
+		    top: 0;
+		    left: 0;
+		}
+		.tile>.wrapper:before {
+		    bottom: 0;
+		    content: "";
+		    z-index: 5;
+		    background: linear-gradient(transparent 40%,rgba(0,0,0,.2) 70%,rgba(0,0,0,.5) 87%,rgba(0,0,0,.85));
+		}
+		.tile .tile__meta {
+		    bottom: 0;
+		    color: #fff;
+		    padding: 18px;
+		    position: absolute;
+		    width: 100%;
+		    z-index: 10;
+		}
+		.tile .tile__tagline, .tile .tile__title {
+		    color: inherit;
+		    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+		    margin: 0;
+		}
+		.tile .tile__tagline, .tile .tile__title {
+		    color: inherit;
+		    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+		    margin: 0;
+		}
+		.tile video {
+		    width: 100%;
+		    height: auto;
+		}
+		.tile img {
+		    display: block;
+		    width: 100%;
+		    z-index: 1;
+		}
+		.tile img[data-src] {
+		    opacity: 0;
+		    transition: opacity .5s;
+		}
+		img {
+		    display: block;
+		    max-width: 100%;
+		    width: auto;
+		    height: auto;
+		}
+	</style>
+</head>
+<body>
+	<section class="images-container">
+		<ul class="image-list">
+			<li class="big" style="background-color: red;">
+				<article class="tile">
+					<a class="wrapper" href="">
+						<div class="tile__meta">
+		      				<h1 class="tile__title">Title</h1>
+		      				<p class="tile__tagline">This is a snippet for image 1. </p>
+		    			</div>		    			
+		    			<img src="images/JeffersonMemorial.jpg" alt="">		    			
+		    		</a>
+		    	</article>
+		    </li>
+			<li class="small" style="background-color: blue;">
+				<article class="tile">
+					<a class="wrapper" href="">
+						<div class="tile__meta">
+		      				<h1 class="tile__title">Title</h1>
+		      				<p class="tile__tagline">This is a snippet for image 2. </p>
+		    			</div>		    			
+		    			<img src="images/Likeat.jpg" alt="">
+		    		</a>
+		    	</article>
+		    </li>
+			<li class="small" style="background-color: yellow;">
+				<article class="tile">
+					<a class="wrapper" href="">
+						<div class="tile__meta">
+		      				<h1 class="tile__title">Title</h1>
+		      				<p class="tile__tagline">This is a snippet for image 3. </p>
+		    			</div>		    			
+		    			<img src="images/Statue.jpg" alt="">
+		    		</a>
+		    	</article>
+		    </li>
+			<li class="small" style="background-color: green;">
+				<article class="tile">
+					<a class="wrapper" href="">
+						<div class="tile__meta">
+		      				<h1 class="tile__title">Title</h1>
+		      				<p class="tile__tagline">This is a snippet for image 4. </p>
+		    			</div>		    			
+		    			<img src="images/Woody.jpg" alt="">
+		    		</a>
+		    	</article>
+		    </li>
+			<li class="small" style="background-color: violet;">
+				<article class="tile">
+					<a class="wrapper" href="">
+						<div class="tile__meta">
+		      				<h1 class="tile__title">Title</h1>
+		      				<p class="tile__tagline">This is a snippet for image 5. </p>
+		    			</div>		    			
+		    			<img src="images/SakatahBikeRide.jpg" alt="">
+		    		</a>
+		    	</article>
+		    </li>
+		</ul>
+	</section>
+</body>
+</html>
+
