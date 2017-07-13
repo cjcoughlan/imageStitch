@@ -1,2 +1,2 @@
 # imageStitch
-Just a repository for an image stitch
+Just a repository for an SharePoint image stitch
